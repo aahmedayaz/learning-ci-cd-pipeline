@@ -31,6 +31,15 @@ jobs:
       - name : Checking NPM Version
         run : npm -v
       
+      - name : Printing Event Name
+        run : echo " ${{ github.event_name }} "
+        
+      - name : Printing Runner OS 
+        run : echo " ${{ runner.os }} "
+        
+      - name : Printing Github Repository 
+        run : echo " ${{ github.repository }} "
+        
       - name : Farewell Command
         run : echo "Scene Done"
  
