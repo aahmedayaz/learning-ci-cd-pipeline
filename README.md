@@ -27,8 +27,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '12'
+          
       - name : Print Greetings
-        run : echo "Hello ! Ahmed Ayaz"
+        run : echo "Hello ! ${{ secrets.DEVELOPER_NAME }}"
         
       - name : Checking Node Version
         run : node -v
@@ -50,3 +54,4 @@ jobs:
 ```
 
 - `${{ env var }}` This is how we save environmental variables.
+- `${{ secrets.DEVELOPER_NAME }}` This is how we use Secrets.
