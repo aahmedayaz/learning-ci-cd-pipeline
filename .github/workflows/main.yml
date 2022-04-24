@@ -22,8 +22,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run : echo "Hello ! Ahmed Ayaz"
-      - run : node -v
-      - run : npm -v
-      - run : echo "Scene Done"
+      - name : Print Greetings
+        run : echo "Hello ! Ahmed Ayaz"
+        
+      - name : Checking Node Version
+        run : node -v
+      
+      - name : Checking NPM Version
+        run : npm -v
+      
+      - name : Farewell Command
+        run : echo "Scene Done"
  
