@@ -28,7 +28,7 @@ jobs:
           node-version: '12'
           
       - name : Print Greetings
-        run : echo "Hello ! Ahmed Ayaz"
+        run : echo "Hello ! ${{ secrets.DEVELOPER_NAME }}"
         
       - name : Checking Node Version
         run : node -v
