@@ -23,6 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - run : echo "Hello ! Ahmed Ayaz"
-      - run : npm install bcrypt
+      - run : node -v
+      - run : npm -v
       - run : echo "Scene Done"
  
